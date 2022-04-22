@@ -16,9 +16,6 @@ int main()  {
     int product = 1;
     int loopCounter = 1;
 
-    std::cout << "This program can multiply up from 1 to the number you type."
-              << "\n" << "For example, 5: 1x2x3x4x5=120" << "\n" << std::endl;
-
     // input
     std::cout << "Enter in a positive integer: " << std::endl;
     std::cin >> positiveIntegerString;
@@ -39,7 +36,7 @@ int main()  {
                     loopCounter = loopCounter + 1;
                 } while (loopCounter <= positiveInteger);
 
-                std::cout << "The multiplication of numbers from 1 to "
+                std::cout << "The factorial of "
                           << positiveInteger << " is " << product << std::endl;
             } else {
                 std::cout << "This is a negative integer" << std::endl;
